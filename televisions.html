@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions - EnergyWatch</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span class="logo-text">EnergyWatch</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="televisions.html" class="nav-link active" data-page="televisions">Televisions</a></li>
+                <li><a href="about-us.html" class="nav-link" data-page="about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content" id="televisions-page">
+        <section class="hero">
+            <span class="hero-tag">Data Story &bull; T03</span>
+            <h1>Television Energy Consumption Story</h1>
+            <p class="subtitle">A data-driven investigation into power efficiency across the Australian television market.</p>
+        </section>
+
+        <section class="story-section">
+            <h2>1. Display Technology: Which Screen Uses the Most Power?</h2>
+            <p>
+                When it comes to electricity consumption, display technology is the deciding factor. 
+                In the chart below, <strong>bar height represents median power draw in Watts (taller = more electricity consumed)</strong>:
+            </p>
+            <ul class="insights-list">
+                <li><strong>Standard LCD (Lowest Power):</strong> Consumes the least energy (median ~70W), but picture quality is basic and fewer models exist.</li>
+                <li><strong>LCD (LED) (Balanced):</strong> Draws ~107W median. Although it uses more power than standard LCD, it makes up over 85% of store shelves because it offers the best balance of brightness, price, and efficiency.</li>
+                <li><strong>OLED (Highest Power):</strong> Draws the highest median power (~114W)—about 60% more power than standard LCD—because every individual organic pixel produces its own light.</li>
+            </ul>
+            <div class="chart-card">
+                <img src="img/chart-screen-tech.png" alt="Median Power Consumption by Display Technology" class="chart-image">
+                <p class="chart-caption">Figure 1: Median on-mode power consumption (Watts) by display technology.</p>
+            </div>
+        </section>
+
+        <!-- Chapter 2 -->
+        <section class="story-section">
+            <h2>2. The "Size Penalty": Exponential Growth in Energy Use</h2>
+            <p>
+                Consumers often desire larger displays for living room entertainment. However, plotting screen dimensions against on-mode wattage reveals a distinct <strong>non-linear (exponential) increase</strong> in energy demand:
+            </p>
+            <ul class="insights-list">
+                <li>Compact screens under 50 inches (e.g., 32" to 43") typically draw between <strong>30W and 50W</strong>.</li>
+                <li>Mid-sized family displays (55" to 65") cluster around <strong>80W to 150W</strong>.</li>
+                <li>Large format screens (75" to 85"+) can consume between <strong>200W and 450W+</strong>, effectively quadrupling electricity costs compared to a compact model.</li>
+            </ul>
+            <div class="chart-card">
+                <img src="img/chart-size-power.png" alt="Screen Size vs Power Consumption Scatter Plot" class="chart-image">
+                <p class="chart-caption">Figure 2: Scatter plot showing screen size (inches) vs. on-mode average power (Watts) across the Australian market.</p>
+            </div>
+        </section>
+
+        <!-- Chapter 3 -->
+        <section class="story-section">
+            <h2>3. Market Leaders: Brand Distribution</h2>
+            <p>
+                A handful of major manufacturers provide the vast majority of televisions available in Australia. 
+                <strong>Kogan, LG, and Samsung</strong> lead the market in catalogue diversity, offering consumers options across both entry-level eco-ranges and high-draw flagship tiers.
+            </p>
+            <div class="chart-card">
+                <img src="img/chart-top-brands.png" alt="Top 10 TV Brands by Number of Models" class="chart-image">
+                <p class="chart-caption">Figure 3: Top 10 TV brands in Australia ranked by total number of active certified models.</p>
+            </div>
+        </section>
+
+        <!-- Chapter 4 -->
+        <section class="recommendation-section">
+            <h2>Buyer's Summary: Practical Consumer Guidance</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>The Efficiency Sweet Spot</h3>
+                    <p>A <strong>55-inch to 65-inch LCD (LED)</strong> television delivers an immersive viewing experience while staying below the steep exponential power penalties seen on 75"+ screens.</p>
+                </div>
+                <div class="card">
+                    <h3>Benchmark 5.5+ Stars</h3>
+                    <p>Always verify the Energy Rating label. Choosing a model with 5.5 stars or higher can save up to $250 in electricity costs over seven years of typical usage.</p>
+                </div>
+                <div class="card">
+                    <h3>Switch Off Retail Presets</h3>
+                    <p>Factory "Vivid" picture presets maximize panel backlighting and power draw. Selecting "Standard" or "Cinema Eco" mode can immediately reduce energy consumption by 20–30%.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Allen | COS30045 Data Visualisation | Data Source: data.gov.au</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

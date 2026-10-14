@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T04-2: D3 Manipulation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="img/PowerIcon.png" alt="EnergyWatch Icon" class="logo-img">
+            <span class="logo-text">EnergyWatch</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="televisions.html" class="nav-link">Televisions</a></li>
+                <li><a href="about-us.html" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Appliance Energy Consumption</h1>
+        <div id="content"></div>
+        <svg width="300" height="150" class="d3-canvas"></svg>
+    </main>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
+</body>
+</html>
