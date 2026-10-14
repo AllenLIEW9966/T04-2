@@ -1,7 +1,3 @@
-function createBarChart(data) {
-    console.log("createBarChart received", data.length, "rows");
-}
-
 d3.csv("data/tvBrandCount.csv", d => ({
     brand: d.brand,
     count: +d.count
